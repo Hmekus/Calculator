@@ -1,0 +1,12 @@
+.title{ 
+margin-bottom: 10px; 
+text-align:center; 
+width: 316px;
+height: 20px; 
+color: black; 
+border: solid black 2px; 
+} 
+
+table {
+   border: solid black 2px;
+}
