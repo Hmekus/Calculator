@@ -9,32 +9,32 @@
   <div class=title>My calculator</div>
   <table border="1">
     <tr>
-      <td colspan="3"><input type="text" name="result" id=result></td>
-      <td><input type="button" name="clear" value="c"></td>
+      <td colspan="3"><input type="text" name="resultField" id=result value=""></td>
+      <td><input type="button" name="clear" value="c" onclick="clear()"></td>
     </tr>
     <tr>
-      <td><input type="button" value="1"></td>
-      <td><input type="button" value="2"></td>
-      <td><input type="button" value="3"></td>
-      <td><input type="button" value="/"></td>
+      <td><input type="button" value="1" class="one" onclick="display('1')"></td>
+      <td><input type="button" value="2" class="two" onclick="display('2')"></td>
+      <td><input type="button" value="3" class="three" onclick="display('3')"></td>
+      <td><input type="button" value="/" class="division" onclick="display(' / ')"></td>
     </tr>
     <tr>
-      <td><input type="button" value="4"></td>
-      <td><input type="button" value="5"></td>
-      <td><input type="button" value="6"></td>
-      <td><input type="button" value="-"></td>
+      <td><input type="button" value="4" class="four" onclick="display('4')"></td>
+      <td><input type="button" value="5" class="five" onclick="display('5')"></td>
+      <td><input type="button" value="6" class="six" onclick="display('6')"></td>
+      <td><input type="button" value="-" class="minus" onclick="display(' - ')"></td>
     </tr>
     <tr>
-      <td><input type="button" value="7"></td>
-      <td><input type="button" value="8"></td>
-      <td><input type="button" value="9"></td>
-      <td><input type="button" value="+"></td>
+      <td><input type="button" value="7" class="seven" onclick="display('7')"></td>
+      <td><input type="button" value="8" class="eight" onclick="display('8')"></td>
+      <td><input type="button" value="9" class="nine" onclick="display('9')"></td>
+      <td><input type="button" value="+" class="plus" onclick="display(' + ')"></td>
     </tr>
     <tr>
-      <td><input type="button" value="."></td>
-      <td><input type="button" value="0"></td>
-      <td><input type="button" value="="></td>
-      <td><input type="button" value="*"></td>
+      <td><input type="button" value="." class="dot" onclick="display()"></td>
+      <td><input type="button" value="0" class="zero" onclick="display('0')"></td>
+      <td><input type="button" value="=" class="equal" onclick="operate()"></td>
+      <td><input type="button" value="*" class="asteriks" onclick="display(' * ')"></td>
     </tr>
   </table>
 </body>
