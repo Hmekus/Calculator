@@ -1,9 +1,8 @@
 let displayValue = document.getElementById('result');
 
-/*let matchItUp = {
-  '+': function (x, y) {return x + y},
-  '-': function (x, y) {return x - y}
-};*/
+function clear() {
+  alert("Vasya!!!!!")
+}
 
 function add(a, b) {
   let sum = a + b;
@@ -24,38 +23,14 @@ function divide(a, b) {
 }
 
 function operate() {
-  let operateValue = displayValue.value.split(' ');
-  let operands = [];
-  let operators = [];
+  let operateValue = displayValue.value;
 
-  for (let i = 0; i < operateValue.length; i++) {
-    if (i % 2 === 0) {
-      operands.push(operateValue[i]);
-
-    } else {
-      operators.push(operateValue[i]);
-    }
-  }
-
-  if (operators[0] === "-") {
-    displayValue.value = subtract(operands[0], operands[1]);
-  
-  } else if (operators[0] === "+") {
-    displayValue.value = add(Number(operands[0]), Number(operands[1]));
-
-  } else if (operators[0] === "*") {
-    displayValue.value = Number(multiply(operands));
-
-  } else {
-    displayValue.value = divide(operands[0], operands[1]);
+  if (operateValue.match(/^(\d|[-+*/])*$/)) {
+    displayValue.value = eval(operateValue);
   }
 }    
 
 
 function display(button) {
   displayValue.value += button;
-}
-
-function clear() {
-  displayValue.value = 0;
 }
