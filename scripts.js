@@ -1,36 +1,38 @@
-let displayValue = document.getElementById('result');
+let displayValue = document.getElementById("output");
+const error = "You cant divide by zero";
 
-function clear() {
-  alert("Vasya!!!!!")
+function removeZero() {
+  let operateValue = displayValue.innerHTML;
+  if (operateValue == "0") {
+    operateValue = " ";
+    displayValue.innerHTML = operateValue;
+  }
 }
 
-function add(a, b) {
-  let sum = a + b;
-  return sum;
-}
-
-function subtract(a, b) {
-  let difference = a - b;
-  return difference;
-}
-
-function multiply(array) {
-  return array.reduce((a, b) => a * b);
-}
-
-function divide(a, b) {
-  return a / b;
+function clearDisplay() {
+  document.getElementById("output").innerHTML = 0;
 }
 
 function operate() {
-  let operateValue = displayValue.value;
+  let operateValue = displayValue.innerHTML;
+  let resultOfEval;
 
-  if (operateValue.match(/^(\d|[-+*/])*$/)) {
-    displayValue.value = eval(operateValue);
+  if (operateValue.match(/^(\d|[-+*\/]| |\.)*$/)) {
+    
+    resultOfEval = eval(operateValue);
+
+    if (resultOfEval == Infinity) {
+      displayValue.innerHTML = error;
+    
+    } else {
+      displayValue.innerHTML = eval(operateValue);
+    }  
   }
-}    
+}
+    
 
 
 function display(button) {
-  displayValue.value += button;
+  removeZero();
+  displayValue.innerHTML += button;
 }
