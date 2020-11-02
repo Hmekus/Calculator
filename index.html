@@ -6,42 +6,46 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div class="display">   
-    <p id="output">0</p>
-  </div>
+  <div class="container">
   
-  <div class="first-row">
-   <button  style="width: 138px;" value="C" onclick="clearDisplay()">C</button>
-   <button  onclick="display(' % ')">%</button>
-   <button  value="/" class="division" onclick="display(' / ')">/</button>
-  </div>
-  
-  <div class="second-row">
-    <button  value="7" class="seven" onclick="display('7')">7</button>
-    <button  value="8" class="eight" onclick="display('8')">8</button>
-    <button  value="9" class="nine" onclick="display('9')">9</button>
-    <button  value="X" class="multiply" onclick="display(' * ')">X</button>
-  </div>
+    <div class="display">   
+      <p id="output">0</p>
+    </div>
 
-  <div class="third-row">
-    <button  value="4" class="four" onclick="display('4')">4</button>
-    <button  value="5" class="five" onclick="display('5')">5</button>
-    <button  value="6" class="six" onclick="display('6')">6</button>
-    <button  value="-" class="minus" onclick="display(' - ')">-</button>
-  </div>
+    <div class="first-row">
+     <button  class="wide" value="C" onclick="clearDisplay()">C</button>
+     <button  onclick="display(' % ')">%</button>
+     <button  value="/" class="division" onclick="display(' / ')">/</button>
+    </div>
 
-  <div class="fourth-row">
-   <button  value="1" class="one" onclick="display('1')">1</button>
-   <button  value="2" class="two" onclick="display('2')">2</button>
-   <button  value="3" class="three" onclick="display('3')">3</button>
-   <button  value="+" class="plus" onclick="display(' + ')">+</button>
-  </div>
+    <div class="second-row">
+      <button  value="7" class="seven" onclick="display('7')">7</button>
+      <button  value="8" class="eight" onclick="display('8')">8</button>
+      <button  value="9" class="nine" onclick="display('9')">9</button>
+      <button  value="X" class="multiply" onclick="display(' * ')">X</button>
+    </div>
 
-  <div class="fifth-row">
-    <button style="width: 138px;" value="0" class="zero" onclick="display('0')">0</button>
-    <button value="." class="dot" onclick="display('.')">.</button>
-    <button value="=" class="equal" onclick="operate()">=</button>
-  </div>
+    <div class="third-row">
+      <button  value="4" class="four" onclick="display('4')">4</button>
+      <button  value="5" class="five" onclick="display('5')">5</button>
+      <button  value="6" class="six" onclick="display('6')">6</button>
+      <button  value="-" class="minus" onclick="display(' - ')">-</button>
+    </div>
+
+    <div class="fourth-row">
+     <button  value="1" class="one" onclick="display('1')">1</button>
+     <button  value="2" class="two" onclick="display('2')">2</button>
+     <button  value="3" class="three" onclick="display('3')">3</button>
+     <button  value="+" class="plus" onclick="display(' + ')">+</button>
+    </div>
+
+    <div class="fifth-row">
+      <button class="wide" value="0" class="zero" onclick="display('0')">0</button>
+      <button value="." class="dot" onclick="display('.')">.</button>
+      <button value="=" class="equal" onclick="operate()">=</button>
+    </div>
+
+</div>
 </body>
   <script type="text/javascript" src="scripts.js"></script>
 </html>
