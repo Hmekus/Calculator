@@ -1,5 +1,5 @@
 let displayValue = document.getElementById("output");
-const error = "You cant divide by zero";
+const error = "You can\'t divide by zero";
 
 function removeZero() {
   let operateValue = displayValue.innerHTML;
@@ -11,6 +11,12 @@ function removeZero() {
 
 function clearDisplay() {
   document.getElementById("output").innerHTML = 0;
+}
+
+function perc() {
+  let operateValue = displayValue.innerHTML;
+  operateValue = operateValue / 100;
+  displayValue.innerHTML = operateValue;
 }
 
 function operate() {

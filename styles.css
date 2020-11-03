@@ -1,15 +1,39 @@
+body {
+  background-image: url("background.jpeg");
+}
+
+.headerText {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.upperBorder {
+  background-color: black;
+  height: 0.625rem;
+  width: 18.9375rem;
+}
+
 .display {
-  background-color: rgb(201, 201, 201);
-  padding: 0.9375rem;
+  background-color: black;
+  padding: 0.1rem;
   width: 15.625rem;
   text-align: right;
-  font-size: 1.25rem;
-  border-top-left-radius: 0.625rem;
-  border-top-right-radius: 0.625rem;
+  font-size: 2rem;
+  margin-left: 0.625rem;
+}
+
+p {
+  color: #ffffff;
 }
 
 .container {
+  background-color: black;
+  height: 25rem;
+  width: 18.9375rem;
+}
 
+.margin {
+  margin-left: 0.625rem;
 }
 
 .wide {
@@ -20,8 +44,8 @@ button {
   width: 4.1875rem;
   height: 2.8125rem;
   margin-top: 0.625rem;
-  background-color: rgb(194, 194, 194);
-  color: black;
+  background-color: #363636;
+  color: #ffffff;
   font-size: 1.25rem;
   border-radius: 1.25rem;
   border-width: 0px;
@@ -34,4 +58,21 @@ button:hover {
 
 button:active {
   background-color: rgb(136, 136, 136);
+}
+
+.orange {
+  background-color: #f1981f;
+}
+
+.grayButton {
+  background-color: #a4a4a4;
+}
+
+.orange:hover {
+  cursor: pointer;
+  background-color: #bb781d;
+}
+
+.orange:active {
+  background-color: #8a5916;
 }
